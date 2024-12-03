@@ -1,0 +1,1 @@
+print([any([all(map(lambda x: x < 0 and x > -4, y)) or all(map(lambda x: x > 0 and x < 4, y)) for y in x]) for x in [[[x[i+1] - x[i] for i in range(len(x) - 1)] for x in y] for y in [[[y[i] for i in range(len(y)) if i != n] for n in range(len(y))] + [y] for y in [list(map(int, x.split())) for x in input().split('\n')]]]].count(True))
